@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- p -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- <div display="none, block" width="100%" height="100%" class="top-alert">
+            <span size="2" display="inline-block" color="black" font-weight="medium" class="top-alert-text">
+                <span>MimDeco is open and shipping!
+
+                </span>
+            </span>
+        </div> -->
+        <div class="menu">
+            <div class="menu__left">
+                <a href="./index.html"><img src="./assets/images/logo.png" id="icon" class="logo"></a>
+
+            </div>
+            <div class="menu__right">
+                <div class="menu__right__item">Home</div>
+                <div class="menu__right__item">About Us</div>
+                <div class="menu__right__item">Shop</div>
+                <div class="menu__right__item">On Sale</div>
+                <div class="menu__right__item menu__cta"><a href='./cart.html'><i class="fa-solid fa-magnifying-glass"></i><i
+                            class="fa-solid fa-user"></i>(0)<i class="fa-sharp fa-solid fa-cart-plus"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cart__container">
+            <div class="cart">
+                <h1 class="cart__header">Cart</h1>
+                <h1 class="cart__total">2</h1>
+            </div>
+            <div class="bg" style="background-color: #D4BA78; height: 40px;"></div>
+
+
+            <div class="cart__products">
+                <div class="cart__product">
+                    <div class="cart__product__img">
+                        <img class="cart__img" src="./assets/images/cart 1.png">
+                        <div style="display:flex ;flex-direction:column">
+                            <span style="font-weight:600 ;font-size:27px;">Salt Dispenser</span>
+                            <p style="color:#fff">Remove Item ...</p>
+                        </div>
+                    </div>
+
+
+                    <div style="color:#fff" class="cart__product__price">
+                        <div class="cart__product__cta">
+                            <div class="cart__icon"><i i onclick="btnadd2()" style="color:#fff" class="fa-solid fa-chevron-up"></i></div>
+                            <span style="color:#fff" id="val2">1</span>
+                            <div class="cart__icon"><i onclick="btnRemove2()" style="color:#fff" class="fa-solid fa-chevron-down"></i></div>
+
+                        </div>
+                        <span class="cart__p" id="cart1">10$</span>
+                    </div>
+
+                </div>
+                <div class="cart__product">
+                    <div class="cart__product__img">
+                        <img class="cart__img" src="./assets/images/cart 2.png">
+                        <div style="display:flex ;flex-direction:column">
+                            <span style="font-weight:600 ;font-size:27px;">Salt Dispenser</span>
+                            <p style="color:#fff">Remove Item ...</p>
+                        </div>
+                    </div>
+
+
+                    <div style="color:#fff" class="cart__product__price">
+                        <div class="cart__product__cta">
+                            <div class="cart__icon"><i onclick="btnadd()" style="color:#fff"
+                                    class="fa-solid fa-chevron-up"></i></div>
+                            <span style="color:#fff" id="val">1</span>
+                            <div class="cart__icon"><i onclick="btnRemove()" style="color:#fff" class="fa-solid fa-chevron-down"></i></div>
+
+                        </div>
+                        <span class="cart__p" id="cart2">10$</span>
+                    </div>
+
+                </div>
+                <div class="cart__product">
+                    <div class="cart__product__img">
+                        <img class="cart__img" src="./assets/images/cart 3.png">
+                        <div style="display:flex ;flex-direction:column">
+                            <span style="font-weight:600 ;font-size:27px;">Salt Dispenser</span>
+                            <p style="color:#fff">Remove Item ...</p>
+                        </div>
+                    </div>
+
+
+                    <div style="color:#fff" class="cart__product__price">
+                        <div class="cart__product__cta">
+                            <div class="cart__icon"><i onclick="btnadd3()" style="color:#fff" class="fa-solid fa-chevron-up"></i></div>
+                            <span style="color:#fff" id="val3" >1</span>
+                            <div class="cart__icon"><i onclick="btnRemove3()" style="color:#fff" class="fa-solid fa-chevron-down"></i></div>
+
+                        </div>
+                        <span class="cart__p" id="cart3">10$</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footer__left">
+                    <img class="footer__logo" src="./assets/images/logo.png">
+                </div>
+                <div class="footer__center">
+                    <span class="footer__details"> phone number</span>
+                    <span class="footer__details"> Email Address</span>
+                    <span class="footer__details"> Street Address</span>
+
+                </div>
+                <div class="footer__right">
+                    <span class="footer__link">Home</span>
+                    <span class="footer__link">About Us</span>
+                    <span class="footer__link">Shop</span>
+                    <span class="footer__link">Sale</span>
+
+                </div>
+            </div>
+            <div class="social" style="background-color: #D4BA78; height: 40px;">
+                <i style="color: #fff; padding-left: 10px;" class="fa-brands fa-instagram"></i>
+                <i style="color: #fff;padding-left: 10px;" class="fa-brands fa-twitter"></i>
+                <i style="color: #fff;padding-left: 10px;" class="fa-brands fa-facebook"></i>
+            </div>
+        </footer>
+</body>
+
+</html>
+
+<script>
+    localStorage.setItem('price', 10);
+    const btnadd = () => {
+        const price = localStorage.getItem('price');
+
+        localStorage.setItem('price', parseInt(price) +10+"$");
+        console.log(price)
+       let cart2=document.getElementById("cart2");
+       cart2.innerHTML=localStorage.getItem("price")
+
+       let val2=document.getElementById("val");
+       val2.innerHTML= parseInt(val2.innerHTML)+1
+    }
+    const btnRemove=()=>{
+        const price = localStorage.getItem('price');
+                let val2=document.getElementById("val");
+       val2.innerHTML=val2.innerHTML-1
+
+localStorage.setItem('price', parseInt(price) -10+"$");
+// console.log(price2)
+let cart1=document.getElementById("cart2");
+cart1.innerHTML=localStorage.getItem("price")
+    }
+    localStorage.setItem('price2', 10);
+    const btnadd2 = () => {
+        const price2 = localStorage.getItem('price2');
+
+        localStorage.setItem('price2', parseInt(price2) +10+"$");
+        console.log(price2)
+       let cart1=document.getElementById("cart1");
+       cart1.innerHTML=localStorage.getItem("price2")
+
+       let val2=document.getElementById("val2");
+       val2.innerHTML= parseInt(val2.innerHTML)+1
+    }
+    const btnRemove2=()=>{
+        const price2 = localStorage.getItem('price2');
+        let val2=document.getElementById("val2");
+       val2.innerHTML=val2.innerHTML-1
+
+localStorage.setItem('price2', parseInt(price2) -10+"$");
+// console.log(price2)
+let cart1=document.getElementById("cart1");
+cart1.innerHTML=localStorage.getItem("price2")
+    }
+
+
+
+    localStorage.setItem('price3', 10);
+    const btnadd3 = () => {
+        const price3 = localStorage.getItem('price3');
+        let val2=document.getElementById("val3");
+       val2.innerHTML= parseInt(val2.innerHTML)+1
+        localStorage.setItem('price3', parseInt(price3) +10+"$");
+        console.log(price3)
+       let cart3=document.getElementById("cart3");
+       cart3.innerHTML=localStorage.getItem("price3")
+    }
+    const btnRemove3=()=>{
+        const price2 = localStorage.getItem('price3');
+        let val2=document.getElementById("val3");
+       val2.innerHTML=val2.innerHTML-1
+
+localStorage.setItem('price3', parseInt(price2) -10+"$");
+// console.log(price2)
+let cart1=document.getElementById("cart3");
+cart1.innerHTML=localStorage.getItem("price3")
+    }
+
+</script>
